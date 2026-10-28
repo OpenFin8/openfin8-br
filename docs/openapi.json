@@ -1,0 +1,19 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "openfin8-br",
+    "version": "0.1.0",
+    "description": "Sentin8 OpenFin8:BR - Brazilian open finance (Open Finance Brasil: consent resources, PIX payments, enrollments). The Open Finance Brasil specifications are public (github.com/OpenBanking-Brasil); resource paths are carried with attribution preserved."
+  },
+  "paths": {
+    "/v1/health": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "vertical": "openfin8",
+  "services": [
+    {
+      "service_type": "openfin8:br",
+      "telemetry_property": {
+        "slug": "openfin8-br",
+        "name": "OpenFin8:BR Telemetry"
+      }
+    }
+  ]
+}
