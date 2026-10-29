@@ -10,9 +10,9 @@ obligations, PIX instant payments, and the enrollment-based
 recurring model. The ceremony is FAPI-BR: the Open Finance Brasil
 Directory + ICP-Brasil mTLS + detached JWS signing.
 
-In design (OBARCH-6): the DESIGN.md defines the BR wire, the
-consent lifecycle mapping, the PIX money movement, and the
-registration/configuration surface.
+[`DESIGN.md`](https://github.com/OpenFin8/openfin8-br/blob/main/DESIGN.md)
+defines the BR wire, the consent lifecycle mapping, the PIX money
+movement, and the registration/configuration surface.
 
 - [Architecture (DDD)](https://github.com/OpenFin8/openfin8-br/blob/main/DESIGN.md)
 - [Business (BRD)](https://github.com/OpenFin8/openfin8-br/blob/main/BUSINESS.md)

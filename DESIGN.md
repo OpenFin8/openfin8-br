@@ -1,10 +1,9 @@
 # openfin8-br - Detailed Design Document
 
-> Status: **PROPOSED** - the Brazilian open-finance adapter (OBARCH-6).
 > Open Finance Brasil (the Central-Bank-mandated open-finance
 > ecosystem - the largest in the world, ~154M consents): the
 > consent-resource + PIX payment ecosystem. Depends on:
-> `openfin8-core` (OBARCH-1). Read `openfin8-uk/DESIGN.md` for the
+> `openfin8-core`. Read `openfin8-uk/DESIGN.md` for the
 > sibling FAPI-JWS adapter; this document defines the BR deltas.
 
 ## 1. Scope & Context
@@ -24,9 +23,9 @@ model maps onto core's consents + `consent_resources` +
 `awaiting_authorization` for the multi-phase BR lifecycle), the
 recipient registry (two-ledger), CSDF (the BR cluster vocabulary is
 profile data), notifications, and the detached-JWS machinery that
-OBARCH-5 lands in the kernel behind the profile.
+ lands in the kernel behind the profile.
 
-## 2. The BR Wire (as designed, per the verified research)
+## 2. The BR Wire
 
 | Family | Resources | Notes |
 |---|---|---|
@@ -80,7 +79,7 @@ to Payments' recurring engines with the enrollment manifest in
   `OPENFIN8_BR_ICP_CERT_REF`/`_KEY_REF` (secrets references), the
   signing-key reference. Per-env overrides via `sys.services.config`.
 
-## 6. Spec Publication (OBARCH-2)
+## 6. Spec Publication
 
 **Vendored**: the Open Finance Brasil specifications are public
 repositories (github.com/OpenBanking-Brasil) - this adapter MAY
@@ -88,7 +87,7 @@ carry the OFBr resource paths with attribution. The drift guard
 asserts the attribution notice is present and that paths conform to
 the OFBr prefixes.
 
-## 7. Invariants (as designed)
+## 7. Invariants
 
 - Every kernel invariant holds (chokepoint, terminal revocation,
   fail-closed minimization, tenant discipline, profile isolation).

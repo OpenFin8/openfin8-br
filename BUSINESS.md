@@ -1,8 +1,7 @@
 # OpenFin8:BR - Business Requirements & Functionality
 
-> Status: **IN DESIGN** (OBARCH-6). This BRD records the business
-> scope the Brazilian adapter will deliver; section 9 lists the
-> implementation acceptance criteria (the service is a skeleton).
+> This BRD records the business scope the Brazilian adapter
+> delivers; section 9 lists the acceptance criteria.
 >
 > Audience: product owners, business analysts. For architecture read
 > `README.md`; for wire-level detail read `DESIGN.md`.
@@ -11,7 +10,7 @@
 
 OpenFin8:BR is **Brazilian open finance**: the Open Finance Brasil
 surface (Central-Bank mandated; the largest open-finance ecosystem
-in the world, ~154M consents). It will deliver:
+in the world, ~154M consents). It delivers:
 
 - **The mandated consent-resource model** - BR consents are
   first-class, auditable resources with hard expiry, per-resource
@@ -66,7 +65,7 @@ Family `openfin8:br:*`: consent lifecycle, payment lifecycles,
 enrollment events, revocations - consumed by recipient-side
 reconciliation.
 
-## 5. Business Rules & Invariants (as designed)
+## 5. Business Rules & Invariants
 
 - Every kernel invariant holds.
 - Payment initiation verifies the JWS signature; consent
@@ -100,9 +99,8 @@ referenced per environment).
 
 ## 9. Acceptance Criteria (the implementation's definition of done)
 
-- The skeleton builds + the publication guard passes (vendored with
-  attribution) - **current state**.
-- The BR consent-resource model over the kernel lands (per-resource
+- The publication guard passes (vendored with attribution).
+- The BR consent-resource model over the kernel (per-resource
   permissions, expiry + deletion sweep).
 - The FAPI-BR ceremony green (mTLS + JWS) against a test Directory +
   mock ICP CA.

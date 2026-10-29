@@ -5,5 +5,4 @@
 
 //! Library target for the openfin8-br service (the integration
 //! tests and the e2e harness link against this; the binary is
-//! `src/main.rs`). The service modules land with the OBARCH
-//! implementation - see DESIGN.md.
+//! `src/main.rs`). The service modules follow `DESIGN.md`.
